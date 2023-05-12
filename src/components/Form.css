@@ -1,0 +1,48 @@
+.form-input {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+}
+label {
+    font-size: 0.75rem;
+    color: #D5D0D2;
+}
+input {
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 0.5rem;
+    border: 1px solid #800000;
+}
+span {
+    font-size: 0.75rem;
+    padding: 3px;
+    color: #FB0509;
+    display: none;
+}
+input:invalid[focus="true"] {
+    border: 1px solid #FB0509;
+}
+input:invalid[focus="true"] ~ span {
+    display: block;
+}
+@media screen and (max-width: 1024px) {
+    input {
+        width: 70vw;
+    }
+}
+@media screen and (max-width: 600px) {
+    input {
+        width: 50vw;
+        font-size: 0.5rem;
+    }
+    span {
+        display: none;
+    }
+    .form-input {
+        width: 10rem;
+        font-size: 0.5rem;
+    }
+    h1 {
+        font-size: 1.25rem;
+    }
+}
